@@ -1,0 +1,47 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8">
+            User: <input type="text" id="userInput" class="form-control" />
+        </div>
+
+        <div class="col-sm-2">
+            Colour: <input type="color" id="colourInput" class="form-control" value="#ff0000">
+        </div>
+
+        <div class="col-sm-12">&nbsp;</div>
+        <div class="col-sm-12 ui-message-list">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+
+    <div class="row ui-messagefooter">
+            <hr />
+            <div class="col-sm-8">
+                @*Message:<input type="text" id="messageInput" class="form-control" />*@     
+                Message:
+                <textarea class="form-control ui-message-input" id="messageInput" rows="5"></textarea>
+            </div>
+            <div class="col-sm-4 text-right">
+                <input type="button" id="sendButton" value="Send Message" class="btn btn-primary" />
+            </div>
+    </div>
+</div>
+
+
+
+<link href="~/css/site.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
